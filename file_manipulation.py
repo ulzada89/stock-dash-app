@@ -1,4 +1,3 @@
-# from connection_1c import Start1C
 import pandas as pd
 import xlrd
 import datetime
@@ -10,9 +9,6 @@ import dash_bootstrap_components
 from dash import Dash, html, dash_table
 
 start_time = time.time()/60
-
-# start1c = Start1C()
-# start1c.connect_to_main_window()
 
 files = ['Stock Level - for Marketing.xls', 'Polymer Shipment - Export.xls', 'Polymer Shipment - Local.xls', 'Plan.xls']
 file_dataframes = []
