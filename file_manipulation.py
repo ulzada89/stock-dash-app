@@ -214,7 +214,8 @@ file_dataframes[0] = file_dataframes[0].sort_index().reset_index(drop=True).set_
 file_dataframes[0].loc['GRAND TOTAL'] = file_dataframes[0].loc['TOTAL'].sum()
 
 
-file_dataframes[0] = file_dataframes[0].replace(0, '-')
+file_dataframes[0] = file_dataframes[0].round(3).replace(0, '-')
+file_dataframes[0] = file_dataframes[0].reset_index()
 # file_dataframes[0].to_excel('d1gdfgdgdgdf.xlsx')
 
 app = Dash(__name__)
