@@ -216,7 +216,7 @@ file_dataframes[0].loc['GRAND TOTAL'] = file_dataframes[0].loc['TOTAL'].sum()
 
 file_dataframes[0] = file_dataframes[0].round(3).replace(0, '-')
 file_dataframes[0] = file_dataframes[0].reset_index()
-file_dataframes[0].to_excel('d1gdfgdgdgdf.xlsx')
+# file_dataframes[0].to_excel('d1gdfgdgdgdf.xlsx')
 
 app = Dash(__name__)
 server = app.server
